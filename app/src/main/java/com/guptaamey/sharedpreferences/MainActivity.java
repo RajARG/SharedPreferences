@@ -59,7 +59,11 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     int ctr = sharedPreferences.getInt( tv., 0);
+                    editor.remove();
+
+                    tv.setText(ctr);
                     tv.setBackgroundColor(-16777216);
+
                 }
             }, 500);
         }
